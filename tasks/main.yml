@@ -1,0 +1,8 @@
+---
+
+- name: add authorized keys
+  authorized_key:
+    key: "{{ item.1.key }}"
+    state: "{{ item.1.state }}"
+    user: "{{ item.0.name }}"
+  loop: "{{ authorized_keys | subelements('keys') }}"

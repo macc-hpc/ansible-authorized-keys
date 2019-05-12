@@ -1,0 +1,10 @@
+---
+
+authorized_keys:
+  - name: vagrant
+    keys:
+      - { key: 'ssh-ed25519 JJJC3NzaC1lZDI1NTE5AAAAILS/xZFXfBZG3OhVKPlWqNE09kpZl32+2635p/bcmnAI', state: present }
+      - { key: "{{ lookup('file', '/Users/ravage/.ssh/id_rsa.pub') }}", state: absent }
+  - name: root
+    keys:
+      - { key: 'ssh-ed25519 CCCAG3NzaC1lZDI1NTE5AAAAILS/xZFXfBZG3OhVKPlWqNE09kpZl32+2635p/bcmnAI', state: absent }

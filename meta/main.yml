@@ -1,0 +1,17 @@
+---
+
+galaxy_info:
+  author: ruimiguel
+  description: Authorized Keys Management
+  company: MACC
+  license: MIT
+  min_ansible_version: 2.4
+  platforms:
+    - name: All
+      versions:
+        - all
+  galaxy_tags:
+    - authentication
+    - openssh
+    - authorized_keys
+dependencies: []
